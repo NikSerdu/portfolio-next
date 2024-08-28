@@ -64,7 +64,7 @@ export default function Page({ params }: { params: { id: string } }) {
 					>
 						{images.map(img => {
 							return (
-								<SwiperSlide>
+								<SwiperSlide key={img.src}>
 									<img
 										src={img.src}
 										alt={img.alt}
