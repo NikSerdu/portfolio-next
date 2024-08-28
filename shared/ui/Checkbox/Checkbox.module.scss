@@ -1,0 +1,10 @@
+.custom_input {
+  @apply w-[55px] h-7 border-primary border rounded-[1000px] px-0.5 flex items-center transition duration-200 relative;
+  &__toggler {
+    @apply w-5 h-5 bg-primary rounded-full absolute;
+  }
+}
+
+.input {
+  @apply hidden;
+}

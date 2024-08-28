@@ -1,0 +1,23 @@
+.title {
+	@apply text-right max-[625px]:text-center;
+}
+
+.projects-block {
+	@apply mt-20 flex flex-col gap-20 relative z-10;
+
+	img.points-top {
+		@apply absolute top-1/4 scale-125 left-0;
+	}
+
+	img.points-bottom {
+		@apply absolute bottom-[15%] scale-125 rotate-90 right-0 -z-10;
+	}
+
+	.xmark {
+		@apply absolute -left-10 top-1/2 scale-50;
+	}
+
+	.link {
+		@apply text-xl text-primary justify-center p-4 flex items-center gap-1;
+	}
+}

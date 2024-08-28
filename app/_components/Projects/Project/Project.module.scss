@@ -1,0 +1,28 @@
+.project {
+	@apply flex max-[1000px]:items-center max-[1000px]:flex-col;
+	img {
+		@apply rounded-xl;
+	}
+	&__date {
+		@apply font-extralight text-2xl;
+	}
+}
+
+.project-left {
+	&__title {
+		@apply min-[1000px]:-ml-20 min-[1000px]:mt-20 text-primary text-end;
+	}
+}
+
+.project-right {
+	@apply min-[1000px]:flex-row-reverse;
+	&__title {
+		@apply min-[1000px]:-mr-20 min-[1000px]:mb-5 z-10 mt-auto  text-primary;
+	}
+}
+
+:global(.dark) .project {
+	h3 {
+		@apply text-[#a83333];
+	}
+}

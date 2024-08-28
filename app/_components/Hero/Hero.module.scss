@@ -1,0 +1,66 @@
+.hero {
+  @apply pb-32 pt-10 lg:py-40 font-light relative;
+
+  .content {
+    @apply relative overflow-hidden;
+    &__text {
+      @apply lg:w-2/5 max-[1000px]:text-center relative z-30;
+
+      h2 {
+        @apply uppercase text-gray-500 text-2xl;
+      }
+
+      h1 {
+        @apply text-black text-8xl mt-3 font-semibold tracking-widest z-10 relative max-[768px]:text-6xl max-[450px]:text-5xl;
+      }
+
+      h3 {
+        @apply border-l border-white lg:w-[200px] mt-20 pl-5 text-gray-500 text-xl;
+      }
+    }
+    &__img {
+      @apply z-10;
+
+      .lines {
+        @apply absolute right-0 top-0 max-[1000px]:hidden;
+      }
+
+      .bubble {
+        @apply absolute lg:right-0 lg:top-0 top-28 -right-20 z-10;
+      }
+    }
+  }
+
+  .xmark-first {
+    @apply absolute left-1/2 top-20 scale-75 hidden lg:block;
+  }
+
+  .xmark-second {
+    @apply absolute right-[10%] top-[40%] scale-50 hidden lg:block;
+  }
+
+  .cv {
+    @apply absolute min-[1000px]:left-[45%] min-[1000px]:top-[70%] max-[1000px]:bottom-0 max-[1000px]:left-1/2 max-[1000px]:-translate-x-1/2;
+    .circle-first {
+      @apply w-40 h-40 bg-primary bg-opacity-30 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full;
+    }
+
+    .circle-second {
+      @apply w-48 h-48 bg-primary bg-opacity-25 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full;
+    }
+
+    .link {
+      @apply w-32 h-32 bg-primary  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full flex justify-center items-center flex-col text-4xl font-bold text-white;
+    }
+  }
+}
+
+:global(.dark) .hero {
+  .content {
+    &__text {
+      h1 {
+        @apply text-white;
+      }
+    }
+  }
+}

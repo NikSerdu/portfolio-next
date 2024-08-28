@@ -1,0 +1,10 @@
+.title {
+  @apply flex gap-10 items-center justify-between max-[625px]:justify-center;
+  img {
+    @apply w-3/4 max-[1000px]:hidden;
+  }
+}
+
+.skills-block {
+  @apply mt-20 flex flex-wrap gap-x-10 gap-y-10 justify-center max-[768px]:flex-col;
+}

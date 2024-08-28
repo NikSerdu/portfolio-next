@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	scroll-behavior: smooth;
+}
+
+section {
+	scroll-margin-top: 80px;
+}
+
+:root {
+	--swiper-pagination-bullet-size: 11px;
+	--swiper-pagination-bullet-inactive-color: #270875;
+	--swiper-pagination-bullet-inactive-opacity: 0.5;
+	--swiper-pagination-bullet-opacity: 1;
+	--swiper-pagination-bullet-horizontal-gap: 4px;
+	--swiper-pagination-bullet-vertical-gap: 6px;
+}
+
+@layer components {
+	.container {
+		@apply max-w-[1296px] mx-auto px-4;
+	}
+
+	h2 {
+		@apply text-8xl tracking-widest font-semibold dark:text-white max-[450px]:text-6xl max-[625px]:text-7xl;
+	}
+
+	h3 {
+		@apply text-5xl tracking-widest font-semibold dark:text-white;
+	}
+}

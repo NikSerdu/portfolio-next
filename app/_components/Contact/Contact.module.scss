@@ -1,0 +1,19 @@
+.contact {
+  @apply relative mb-32;
+
+  img.arc {
+    @apply absolute left-0 top-0 max-[1200px]:hidden;
+  }
+
+  img.points {
+    @apply absolute right-0 top-1/2 rotate-90;
+  }
+
+  .contact-block {
+    @apply mt-10 flex flex-col gap-5 relative text-4xl max-[450px]:text-2xl;
+
+    &__link {
+      @apply flex gap-2 items-center justify-center  text-primary;
+    }
+  }
+}
