@@ -19,7 +19,7 @@ import { A11y, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 export default function Page({ params }: { params: { id: string } }) {
-	const { githubUrl, images, name, stack } = projects[
+	const { githubUrl, images, name, stack, description } = projects[
 		+params.id - 1
 	] as IProject
 	const [open, setOpen] = useState(true)
@@ -61,6 +61,7 @@ export default function Page({ params }: { params: { id: string } }) {
 						autoHeight
 						centeredSlides
 						pagination={{ clickable: true }}
+						style={{ width: '75%' }}
 					>
 						{images.map(img => {
 							return (
@@ -90,9 +91,9 @@ export default function Page({ params }: { params: { id: string } }) {
 					>
 						{name}
 					</Typography>
-					{/* <Typography variant="h6" gutterBottom style={{ color: "#a1a1a1" }}>
-            {project[+params.id-1].description}
-          </Typography> */}
+					{/* <Typography variant='h6' gutterBottom style={{ color: '#a1a1a1' }}>
+						{description}
+					</Typography> */}
 					<Typography variant='h6' gutterBottom style={{ color: '#a1a1a1' }}>
 						<strong>Stack: </strong>
 						{stack.join(', ')}

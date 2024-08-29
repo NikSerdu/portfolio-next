@@ -6,7 +6,7 @@
 	@apply mt-20 flex flex-col gap-20 relative z-10;
 
 	img.points-top {
-		@apply absolute top-1/4 scale-125 left-0;
+		@apply absolute top-1/4 scale-125 left-0 -z-10;
 	}
 
 	img.points-bottom {

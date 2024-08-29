@@ -5,6 +5,8 @@ export const projects: IProject[] = [
 		id: 1,
 		githubUrl: 'https://github.com/NikSerdu/real-estate-shop-react',
 		name: 'Real estate shop',
+		description:
+			'The online platform where you can rent, sell, rent an apartment or house',
 		stack: [
 			'React',
 			'Redux',
@@ -41,6 +43,7 @@ export const projects: IProject[] = [
 		id: 2,
 		githubUrl: 'https://github.com/NikSerdu/react-ecommerce',
 		name: 'Ecommerce with CRM',
+		description: 'The online shop with CRM system (Bitrix24) and admin panel.',
 		stack: [
 			'React',
 			'Redux',
@@ -107,6 +110,7 @@ export const projects: IProject[] = [
 		id: 3,
 		githubUrl: '',
 		name: 'Landing',
+		description: 'Simple landing for mobile app.',
 		stack: ['HTML', 'CSS', 'JS'],
 		date: 'Aug 2024',
 		previewUrl: '/projects/landing/preview.svg',
@@ -139,6 +143,7 @@ export const projects: IProject[] = [
 		id: 4,
 		githubUrl: 'https://github.com/NikSerdu/portfolio',
 		name: 'Developer portfolio',
+		description: 'Template for developer portfolio',
 		stack: ['React', 'Framer motion', 'TS', 'TailwindCSS'],
 		date: 'Jul 2023',
 		previewUrl: '/projects/old-portfolio/preview.svg',
@@ -171,6 +176,7 @@ export const projects: IProject[] = [
 		id: 5,
 		githubUrl: 'https://github.com/NikSerdu/hackathon-sber',
 		name: 'Hackathon Hack&Change',
+		description: 'A web application to simplify the issuance of loans',
 		stack: ['React', 'TypeScript', 'TailwindCSS', 'C#'],
 		date: 'Nov 2023',
 		previewUrl: '/projects/hackaton-hack-and-change/preview.svg',
