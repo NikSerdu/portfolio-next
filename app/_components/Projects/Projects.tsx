@@ -4,6 +4,7 @@ import { projects } from './data'
 import Project from './Project/Project'
 
 import Xmark from '@/shared/ui/Xmark/Xmark'
+import Image from 'next/image'
 import styles from './Projects.module.scss'
 
 const Projects: FC = () => {
@@ -11,12 +12,12 @@ const Projects: FC = () => {
 		<section id='projects' className='container'>
 			<h2 className={styles.title}>My projects</h2>
 			<div className={styles['projects-block']}>
-				<img
+				<Image
 					src='points.png'
 					alt='Point pattern'
 					className={styles['points-top']}
 				/>
-				<img
+				<Image
 					src='points.png'
 					alt='Points pattern'
 					className={styles['points-bottom']}

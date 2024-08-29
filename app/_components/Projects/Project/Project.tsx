@@ -1,5 +1,6 @@
 import { IProject } from '@/shared/types/project.interface'
 import cn from 'clsx'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 import styles from './Project.module.scss'
@@ -18,7 +19,7 @@ const Project: FC<TypeProps> = ({ orientation, project }) => {
 					href={`/project/${id}`}
 					className={cn(styles['project-left'], styles.project)}
 				>
-					<img src={previewUrl} alt='' width={width} height={height} />
+					<Image src={previewUrl} alt='' width={width} height={height} />
 					<div className={styles['project-left__title']}>
 						<h3>{name}</h3>
 						<span className={styles['project__date']}>{date}</span>
@@ -29,7 +30,7 @@ const Project: FC<TypeProps> = ({ orientation, project }) => {
 					href={`/project/${id}`}
 					className={cn(styles['project-right'], styles.project)}
 				>
-					<img src={previewUrl} alt='' width={width} height={height} />
+					<Image src={previewUrl} alt='' width={width} height={height} />
 					<div className={styles['project-right__title']}>
 						<h3>{name}</h3>
 						<span className={styles['project__date']}>{date}</span>

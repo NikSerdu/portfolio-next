@@ -9,6 +9,7 @@ import {
 	IconButton,
 	Typography,
 } from '@mui/material'
+import Image from 'next/image'
 import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import 'swiper/css'
@@ -66,7 +67,7 @@ export default function Page({ params }: { params: { id: string } }) {
 						{images.map(img => {
 							return (
 								<SwiperSlide key={img.src}>
-									<img
+									<Image
 										src={img.src}
 										alt={img.alt}
 										style={{

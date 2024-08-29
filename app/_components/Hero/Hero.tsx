@@ -3,11 +3,12 @@ import { IoCodeDownload } from 'react-icons/io5'
 
 import Xmark from '@/shared/ui/Xmark/Xmark'
 import cn from 'clsx'
+import Image from 'next/image'
 import styles from './Hero.module.scss'
 const Hero: FC = () => {
 	return (
 		<section id='home' className={styles.hero}>
-			<img src='lines.png' alt='Lines' className='absolute left-0' />
+			<Image src='lines.png' alt='Lines' className='absolute left-0' />
 			<div className={cn('container', styles.content)}>
 				<div className={styles['content__text']}>
 					<h2>Full-Stack web developer</h2>
@@ -15,8 +16,8 @@ const Hero: FC = () => {
 					<h3>I&#39;m a full-stack web developer and I really like my job.</h3>
 				</div>
 				<div className={styles['content__img']}>
-					<img src='hero.png' alt='Lines' className={styles.lines} />
-					<img src='bubble.png' alt='Lines' className={styles.bubble} />
+					<Image src='hero.png' alt='Lines' className={styles.lines} />
+					<Image src='bubble.png' alt='Lines' className={styles.bubble} />
 				</div>
 			</div>
 			<Xmark className={styles['xmark-first']} />

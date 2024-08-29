@@ -1,4 +1,5 @@
 import Button from '@/shared/ui/Button/Button'
+import Image from 'next/image'
 import Link from 'next/link'
 import { FC } from 'react'
 import styles from './AboutMe.module.scss'
@@ -8,19 +9,19 @@ const AboutMe: FC = () => {
 		<section id='about-me' className={styles['about-me']}>
 			<div className='container flex justify-between'>
 				<div className={styles['img-block']}>
-					<img
+					<Image
 						src='about-img.png'
 						alt='About me img'
 						className={styles['main-img']}
 					/>
-					<img src='bubble.png' alt='Bubble img' className={styles.bubble} />
+					<Image src='bubble.png' alt='Bubble img' className={styles.bubble} />
 				</div>
 				<div className={styles.content}>
 					<div className={styles.title}>
 						<h2 className=''>
 							About <br /> me
 						</h2>
-						<img src='arrow-right.png' alt='Right arrow' />
+						<Image src='arrow-right.png' alt='Right arrow' />
 					</div>
 					<div className={styles.description}>
 						<p>
@@ -34,7 +35,7 @@ const AboutMe: FC = () => {
 					</div>
 				</div>
 			</div>
-			<img src='points.png' alt='Points img' className={styles['points']} />
+			<Image src='points.png' alt='Points img' className={styles['points']} />
 		</section>
 	)
 }
