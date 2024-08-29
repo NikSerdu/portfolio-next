@@ -37,7 +37,7 @@
 }
 
 :global(.dark) .header {
-	@apply bg-black;
+	@apply bg-black text-white;
 	.switch-theme {
 		span:nth-child(1) {
 			@apply text-gray-500;

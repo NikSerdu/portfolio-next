@@ -25,10 +25,10 @@ section {
 	}
 
 	h2 {
-		@apply text-8xl tracking-widest font-semibold dark:text-white max-[450px]:text-6xl max-[625px]:text-7xl;
+		@apply text-8xl tracking-widest font-semibold dark:text-white max-[450px]:text-6xl max-[625px]:text-7xl text-black;
 	}
 
 	h3 {
-		@apply text-5xl tracking-widest font-semibold dark:text-white;
+		@apply text-5xl tracking-widest font-semibold dark:text-white text-primary;
 	}
 }
