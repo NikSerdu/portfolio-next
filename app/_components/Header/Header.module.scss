@@ -52,7 +52,7 @@
 	@apply bg-white flex px-2 py-4 border-t border-primary  container items-center justify-center fixed bottom-0 z-20 lg:hidden text-black;
 
 	nav {
-		@apply md:text-2xl sm:text-xl max-[450px]:text-xs;
+		@apply md:text-2xl sm:text-xl max-[450px]:text-sm;
 
 		ul {
 			@apply flex items-center;
@@ -65,7 +65,7 @@
 				}
 
 				div {
-					@apply w-full h-[3px] bg-primary absolute -bottom-[18px] left-0 right-0 rounded-xl;
+					@apply w-full h-[3px] bg-primary absolute -bottom-[18px] max-[450px]:-bottom-[20px] left-0 right-0 rounded-xl;
 				}
 			}
 		}
@@ -80,10 +80,8 @@
 }
 
 :global(.dark) .mobile-header {
-	@apply bg-black text-white;
+	@apply bg-black;
 	nav {
-		div {
-			@apply text-white;
-		}
+		@apply text-white;
 	}
 }

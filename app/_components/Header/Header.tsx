@@ -6,7 +6,7 @@ import { useMenuStore } from '@/store/menuStore'
 import cn from 'clsx'
 import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
-import { FC } from 'react'
+import { FC, useEffect, useState } from 'react'
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
 import styles from './Header.module.scss'
 
@@ -36,7 +36,10 @@ export const menuData = [
 const Header: FC = () => {
 	const { activeMenuItem, setActiveMenuItem } = useMenuStore()
 	const { colorMode, handleChange } = useColorMode()
-
+	const [isChecked, setIsChecked] = useState<boolean>(true)
+	useEffect(() => {
+		setIsChecked(colorMode === 'dark')
+	}, [colorMode])
 	return (
 		<>
 			<header className={cn('container', styles.header)}>
@@ -104,7 +107,7 @@ const Header: FC = () => {
 				</nav>
 				<div className={styles['switch-theme']} onClick={handleChange}>
 					<DarkModeSwitch
-						checked={colorMode === 'dark'}
+						checked={isChecked}
 						onChange={handleChange}
 						size={27}
 					/>

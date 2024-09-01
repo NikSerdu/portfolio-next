@@ -9,7 +9,7 @@ import styles from './AboutMe.module.scss'
 const AboutMe: FC = () => {
 	const { ref } = useActiveMenuItem('#about')
 	return (
-		<section id='about-me' className={styles['about-me']} ref={ref}>
+		<section id='about' className={styles['about-me']} ref={ref}>
 			<div className='container flex justify-between'>
 				<div className={styles['img-block']}>
 					<img
