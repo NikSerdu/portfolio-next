@@ -1,16 +1,14 @@
 'use client'
-import { AnimatePresence, motion } from 'framer-motion'
-import { FC } from 'react'
-
-import { DarkModeSwitch } from 'react-toggle-dark-mode'
-import styles from './Header.module.scss'
-
 import { useColorMode } from '@/shared/hooks/useColorMode'
 import Button from '@/shared/ui/Button/Button'
 import Checkbox from '@/shared/ui/Checkbox/Checkbox'
 import { useMenuStore } from '@/store/menuStore'
 import cn from 'clsx'
+import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
+import { FC } from 'react'
+import { DarkModeSwitch } from 'react-toggle-dark-mode'
+import styles from './Header.module.scss'
 
 export const menuData = [
 	{
