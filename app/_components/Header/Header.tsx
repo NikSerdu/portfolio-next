@@ -1,6 +1,6 @@
 'use client'
 import { AnimatePresence, motion } from 'framer-motion'
-import { FC, useEffect, useState } from 'react'
+import { FC } from 'react'
 
 import { DarkModeSwitch } from 'react-toggle-dark-mode'
 import styles from './Header.module.scss'
@@ -8,6 +8,7 @@ import styles from './Header.module.scss'
 import { useColorMode } from '@/shared/hooks/useColorMode'
 import Button from '@/shared/ui/Button/Button'
 import Checkbox from '@/shared/ui/Checkbox/Checkbox'
+import { useMenuStore } from '@/store/menuStore'
 import cn from 'clsx'
 import Link from 'next/link'
 
@@ -15,6 +16,10 @@ export const menuData = [
 	{
 		name: 'Home',
 		href: '#',
+	},
+	{
+		name: 'About',
+		href: '#about',
 	},
 	{
 		name: 'Skills',
@@ -31,12 +36,8 @@ export const menuData = [
 ]
 
 const Header: FC = () => {
-	const [activeMenuItem, setActiveMenuItem] = useState<string>('#')
+	const { activeMenuItem, setActiveMenuItem } = useMenuStore()
 	const { colorMode, handleChange } = useColorMode()
-
-	useEffect(() => {
-		setActiveMenuItem(window.location.hash || '#')
-	}, [])
 
 	return (
 		<>

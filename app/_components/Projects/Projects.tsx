@@ -1,24 +1,31 @@
+'use client'
 import { FC } from 'react'
 import { projects } from './data'
 
 import Project from './Project/Project'
 
+import { useActiveMenuItem } from '@/shared/hooks/useActiveMenuItem'
 import Xmark from '@/shared/ui/Xmark/Xmark'
 import Image from 'next/image'
 import styles from './Projects.module.scss'
 
 const Projects: FC = () => {
+	const { ref } = useActiveMenuItem('#projects')
 	return (
-		<section id='projects' className='container'>
+		<section id='projects' className='container' ref={ref}>
 			<h2 className={styles.title}>My projects</h2>
 			<div className={styles['projects-block']}>
 				<Image
-					src='points.png'
+					width={274}
+					height={75}
+					src='/points.png'
 					alt='Point pattern'
 					className={styles['points-top']}
 				/>
 				<Image
-					src='points.png'
+					width={274}
+					height={75}
+					src='/points.png'
 					alt='Points pattern'
 					className={styles['points-bottom']}
 				/>
@@ -32,10 +39,6 @@ const Projects: FC = () => {
 						/>
 					)
 				})}
-				{/* <Link href={"/projects"} className={styles.link}>
-          See more projects
-          <MdOutlineKeyboardDoubleArrowRight />
-        </Link> */}
 			</div>
 		</section>
 	)
