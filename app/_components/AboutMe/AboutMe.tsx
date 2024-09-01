@@ -1,3 +1,5 @@
+'use client'
+import { useActiveMenuItem } from '@/shared/hooks/useActiveMenuItem'
 import Button from '@/shared/ui/Button/Button'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -5,23 +7,37 @@ import { FC } from 'react'
 import styles from './AboutMe.module.scss'
 
 const AboutMe: FC = () => {
+	const { ref } = useActiveMenuItem('#about')
 	return (
-		<section id='about-me' className={styles['about-me']}>
+		<section id='about-me' className={styles['about-me']} ref={ref}>
 			<div className='container flex justify-between'>
 				<div className={styles['img-block']}>
-					<Image
-						src='about-img.png'
+					<img
+						width={620}
+						height={620}
+						src='/about-img.png'
 						alt='About me img'
 						className={styles['main-img']}
 					/>
-					<Image src='bubble.png' alt='Bubble img' className={styles.bubble} />
+					<Image
+						width={154}
+						height={154}
+						src='/bubble.png'
+						alt='Bubble img'
+						className={styles.bubble}
+					/>
 				</div>
 				<div className={styles.content}>
 					<div className={styles.title}>
 						<h2 className=''>
 							About <br /> me
 						</h2>
-						<Image src='arrow-right.png' alt='Right arrow' />
+						<Image
+							width={103}
+							height={71}
+							src='/arrow-right.png'
+							alt='Right arrow'
+						/>
 					</div>
 					<div className={styles.description}>
 						<p>
@@ -35,7 +51,13 @@ const AboutMe: FC = () => {
 					</div>
 				</div>
 			</div>
-			<Image src='points.png' alt='Points img' className={styles['points']} />
+			<Image
+				width={274}
+				height={75}
+				src='/points.png'
+				alt='Points img'
+				className={styles['points']}
+			/>
 		</section>
 	)
 }

@@ -1,35 +1,35 @@
 .about-me {
-  @apply relative py-16;
+	@apply relative py-16;
 
-  .img-block {
-    @apply relative max-[1000px]:hidden;
-    .main-img {
-      @apply w-3/4;
-    }
-    .bubble {
-      @apply absolute h-1/4 top-[85%] -translate-y-[85%];
-    }
-  }
-  img.points {
-    @apply absolute h-[20%] -bottom-20 right-0;
-  }
+	.img-block {
+		@apply relative max-[1000px]:hidden;
+		.main-img {
+			@apply w-3/4;
+		}
+		.bubble {
+			@apply absolute  top-[85%] -translate-y-[85%];
+		}
+	}
+	img.points {
+		@apply absolute -bottom-20 right-0;
+	}
 
-  .content {
-    @apply min-[1000px]:w-1/2;
+	.content {
+		@apply min-[1000px]:w-1/2;
 
-    .title {
-      @apply flex items-end justify-between max-[1000px]:justify-center;
-      img {
-        @apply h-1/2 max-[1000px]:hidden;
-      }
+		.title {
+			@apply flex items-end justify-between max-[1000px]:justify-center;
+			img {
+				@apply h-1/2 max-[1000px]:hidden;
+			}
 
-      br {
-        @apply max-[1000px]:hidden;
-      }
-    }
+			br {
+				@apply max-[1000px]:hidden;
+			}
+		}
 
-    .description {
-      @apply mt-20 min-[1000px]:w-[60%] text-gray-500 ml-auto z-10 relative;
-    }
-  }
+		.description {
+			@apply mt-20 min-[1000px]:w-[60%] text-gray-500 ml-auto z-10 relative;
+		}
+	}
 }

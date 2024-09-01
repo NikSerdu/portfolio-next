@@ -62,7 +62,7 @@ export default function Page({ params }: { params: { id: string } }) {
 						autoHeight
 						centeredSlides
 						pagination={{ clickable: true }}
-						style={{ width: '75%' }}
+						style={{ width: '100%' }}
 					>
 						{images.map(img => {
 							return (
@@ -70,8 +70,9 @@ export default function Page({ params }: { params: { id: string } }) {
 									<Image
 										src={img.src}
 										alt={img.alt}
+										width={1000}
+										height={1000}
 										style={{
-											width: 800,
 											objectFit: 'cover',
 											marginRight: 20,
 											borderRadius: 8,

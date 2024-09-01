@@ -22,19 +22,19 @@ export const projects: IProject[] = [
 		height: 360,
 		images: [
 			{
-				src: '/projects/real-estate-shop/1.png',
+				src: '/projects/real-estate-shop/1.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/real-estate-shop/2.png',
+				src: '/projects/real-estate-shop/2.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/real-estate-shop/3.png',
+				src: '/projects/real-estate-shop/3.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/real-estate-shop/3.png',
+				src: '/projects/real-estate-shop/4.webp',
 				alt: '',
 			},
 		],
@@ -61,47 +61,47 @@ export const projects: IProject[] = [
 		height: 500,
 		images: [
 			{
-				src: '/projects/ecommerce-with-crm/1.png',
+				src: '/projects/ecommerce-with-crm/1.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/2.png',
+				src: '/projects/ecommerce-with-crm/2.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/3.png',
+				src: '/projects/ecommerce-with-crm/3.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/4.png',
+				src: '/projects/ecommerce-with-crm/4.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/5.png',
+				src: '/projects/ecommerce-with-crm/5.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/6.png',
+				src: '/projects/ecommerce-with-crm/6.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/7.png',
+				src: '/projects/ecommerce-with-crm/7.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/8.png',
+				src: '/projects/ecommerce-with-crm/8.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/9.png',
+				src: '/projects/ecommerce-with-crm/9.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/10.png',
+				src: '/projects/ecommerce-with-crm/10.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/ecommerce-with-crm/11.png',
+				src: '/projects/ecommerce-with-crm/11.webp',
 				alt: '',
 			},
 		],
@@ -151,23 +151,23 @@ export const projects: IProject[] = [
 		height: 433,
 		images: [
 			{
-				src: '/projects/old-portfolio/1.png',
+				src: '/projects/old-portfolio/1.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/old-portfolio/2.png',
+				src: '/projects/old-portfolio/2.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/old-portfolio/3.png',
+				src: '/projects/old-portfolio/3.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/old-portfolio/4.png',
+				src: '/projects/old-portfolio/4.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/old-portfolio/5.png',
+				src: '/projects/old-portfolio/5.webp',
 				alt: '',
 			},
 		],
@@ -184,27 +184,27 @@ export const projects: IProject[] = [
 		height: 360,
 		images: [
 			{
-				src: '/projects/hackaton-hack-and-change/1.jpg',
+				src: '/projects/hackaton-hack-and-change/1.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/hackaton-hack-and-change/2.jpg',
+				src: '/projects/hackaton-hack-and-change/2.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/hackaton-hack-and-change/3.jpg',
+				src: '/projects/hackaton-hack-and-change/3.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/hackaton-hack-and-change/4.jpg',
+				src: '/projects/hackaton-hack-and-change/4.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/hackaton-hack-and-change/5.jpg',
+				src: '/projects/hackaton-hack-and-change/5.webp',
 				alt: '',
 			},
 			{
-				src: '/projects/hackaton-hack-and-change/6.jpg',
+				src: '/projects/hackaton-hack-and-change/6.webp',
 				alt: '',
 			},
 		],
