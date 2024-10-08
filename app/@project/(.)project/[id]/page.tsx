@@ -93,9 +93,9 @@ export default function Page({ params }: { params: { id: string } }) {
 					>
 						{name}
 					</Typography>
-					{/* <Typography variant='h6' gutterBottom style={{ color: '#a1a1a1' }}>
+					<Typography variant='h6' gutterBottom style={{ color: '#a1a1a1' }}>
 						{description}
-					</Typography> */}
+					</Typography>
 					<Typography variant='h6' gutterBottom style={{ color: '#a1a1a1' }}>
 						<strong>Stack: </strong>
 						{stack.join(', ')}

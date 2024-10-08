@@ -32,6 +32,13 @@ const Hero: FC = () => {
 						className={styles.lines}
 					/>
 					<Image
+						src='/tag.png'
+						width={500}
+						height={500}
+						alt='HTML tag'
+						className={styles.tag}
+					/>
+					<Image
 						width={154}
 						height={154}
 						src='/bubble.png'
