@@ -1,6 +1,7 @@
 'use client'
 import { projects } from '@/app/_components/Projects/data'
 import { IProject } from '@/shared/types/project.interface'
+import ToBack from '@/shared/ui/ToBack/ToBack'
 import { GitHub } from '@mui/icons-material'
 import { Box, IconButton, Typography } from '@mui/material'
 import Image from 'next/image'
@@ -21,6 +22,7 @@ export default function Page({ params }: { params: { id: string } }) {
 
 	return (
 		<>
+			<ToBack />
 			<Box
 				sx={{
 					display: 'flex',
