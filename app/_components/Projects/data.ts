@@ -17,7 +17,7 @@ export const projects: IProject[] = [
 			'С#(ASP.NET)',
 		],
 		date: 'Dec 2023',
-		previewUrl: '/projects/real-estate-shop/preview.svg',
+		previewUrl: '/projects/real-estate-shop/preview.jpg',
 		width: 670,
 		height: 360,
 		images: [
@@ -56,7 +56,7 @@ export const projects: IProject[] = [
 			'Bitrix API',
 		],
 		date: 'May 2024',
-		previewUrl: '/projects/ecommerce-with-crm/preview.svg',
+		previewUrl: '/projects/ecommerce-with-crm/preview.jpg',
 		width: 500,
 		height: 500,
 		images: [
@@ -113,7 +113,7 @@ export const projects: IProject[] = [
 		description: 'Simple landing for mobile app.',
 		stack: ['HTML', 'CSS', 'JS'],
 		date: 'Aug 2024',
-		previewUrl: '/projects/landing/preview.svg',
+		previewUrl: '/projects/landing/preview.jpg',
 		width: 800,
 		height: 330,
 		images: [
@@ -146,7 +146,7 @@ export const projects: IProject[] = [
 		description: 'Template for developer portfolio',
 		stack: ['React', 'Framer motion', 'TS', 'TailwindCSS'],
 		date: 'Jul 2023',
-		previewUrl: '/projects/old-portfolio/preview.svg',
+		previewUrl: '/projects/old-portfolio/preview.jpg',
 		width: 690,
 		height: 433,
 		images: [
@@ -179,7 +179,7 @@ export const projects: IProject[] = [
 		description: 'A web application to simplify the issuance of loans',
 		stack: ['React', 'TypeScript', 'TailwindCSS', 'C#'],
 		date: 'Nov 2023',
-		previewUrl: '/projects/hackaton-hack-and-change/preview.svg',
+		previewUrl: '/projects/hackaton-hack-and-change/preview.jpg',
 		width: 670,
 		height: 360,
 		images: [

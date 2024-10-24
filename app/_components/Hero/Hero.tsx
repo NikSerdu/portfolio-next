@@ -52,8 +52,10 @@ const Hero: FC = () => {
 			<div className={styles.cv}>
 				<div className={styles['circle-first']}></div>
 				<div className={styles['circle-second']}></div>
-				{/* TODO add link to CV */}
-				<a href='#' download className={styles.link}>
+				<a
+					href='https://hh.ru/resume/c0ff4c90ff0dda8cc60039ed1f533749784450'
+					className={styles.link}
+				>
 					<IoCodeDownload />
 					<p>CV</p>
 				</a>
