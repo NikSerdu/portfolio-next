@@ -26,7 +26,7 @@
 			}
 
 			.tag {
-				@apply absolute right-32 top-0;
+				@apply absolute right-32 top-0 max-[1100px]:hidden;
 			}
 
 			.bubble {

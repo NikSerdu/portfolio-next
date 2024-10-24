@@ -1,5 +1,5 @@
 .header {
-	@apply bg-white  rounded-[1000px] flex px-2 py-2 border border-primary/50 items-center sticky top-0 z-40 max-[1024px]:hidden text-black;
+	@apply bg-white  rounded-[1000px] flex px-2 py-2 border border-primary/50 items-center sticky top-0 z-40 max-[1150px]:hidden text-black;
 	.name {
 		@apply font-bold text-2xl px-6 py-3;
 	}
@@ -49,7 +49,7 @@
 }
 
 .mobile-header {
-	@apply bg-white flex px-2 py-4 border-t border-primary  container items-center justify-center fixed bottom-0 z-20 lg:hidden text-black;
+	@apply bg-white flex px-2 py-4 border-t border-primary  container items-center justify-center fixed bottom-0 z-20 min-[1151px]:hidden text-black;
 
 	nav {
 		@apply md:text-2xl sm:text-xl max-[450px]:text-sm;
